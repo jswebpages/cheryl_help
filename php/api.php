@@ -4,10 +4,10 @@
 MySQL server connection.
 */
 
-$servername = "p3plzcpnl471654";
-$username = "jrome";
-$password = "jdb2021!pass";
-$dbname = "js_students";
+$servername = "############";
+$username = "############";
+$password = "############";
+$dbname = "############";
 
 
 // Create connection
