@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>angular-route</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-app="myApp">
+<header>
+        <nav class="nav">
+          <a href="#" class="logo"><span>JS</span>webpages</a>
+          <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+          <div class="nav__link hide">
+            <a href="#/!">home</a>
+            <a href="#!about">about</a>
+            <a href="#!contact">contact</a>
+            <a href="#!blog">blog</a>
+          </div>
+        </nav>
+</header>  
+
+<div ng-view></div>
+<div class="footer_content">            
+    <footer class="footer-distributed">
+        <div class="footer-left">    
+            <h3>JS<span>webpages</span></h3>    
+            <p class="footer-links">
+                <a href="#" class="link-1">Home</a>                
+                <a href="#">Blog</a>            
+                <a href="#">Pricing</a>            
+                <a href="#">About</a>                
+                <a href="#">Faq</a>                
+                <a href="#">Contact</a>
+
+          <div class="login-container">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Username" name="username">
+              <input type="text" placeholder="Password" name="psw">
+              <button type="submit">Login</button>
+            </form>
+          </div>
+            </p>    
+            <p class="footer-company-name">JSwebpages ©2022</p>
+        </div>
+    
+        <div class="footer-center">    
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>444 S. Cedros Ave</span> Camden, New Jersey</p>
+            </div>    
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+1.555.555.5555</p>
+            </div>    
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@JSwebpages.com">support@JSwebpages.com</a></p>
+            </div>    
+        </div>                  
+
+        <div class="footer-right">    
+            <p class="footer-company-about">
+                <span>About JSwebpages</span>
+                Software Engineering and All things cybersecurity
+            </p>    
+            <div class="footer-icons">    
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>    
+            </div>    
+        </div>    
+    </footer>
+</div>
+    
+<script src="routes.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
