@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header</title>
+
+<style>
+*{margin: 0;}
+
+.header{
+    width: 100vw; 
+    background-color: #df470b;
+    overflow: auto;
+}
+
+/* .navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+} */
+
+.nav li {
+  float: right;
+  height: 50px;
+  padding: 20px;
+  color: white;
+  list-style-type: none;
+  font-size: 25px;
+
+  background-image: linear-gradient(#000,#000);
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: .4s;
+}
+
+.nav li:hover { 
+  background-size: 100% 100%;
+}
+
+.nav .logo{
+    background-image: none;
+    float:left; 
+    color: #e2dfebec;
+    font-size: 40px;
+}
+
+
+/* .nav{
+    width: 100vw;     
+    color: white;
+}
+
+.logo{
+    float:left; 
+    color: #e2dfebec; 
+    padding:10px; 
+    font-size: 40px;
+}
+
+
+li{
+    display: inline-block; 
+    padding: 20px; 
+    font-size: 20px ;
+} */
+
+@media screen and (max-width: 500px) {
+  .nav .logo{
+    float: none;
+    display: block;
+  }
+
+  .nav li {
+    float: none;
+    display: block;
+  }
+}
+</style>
+
+</head>
+<body>
+    <div class="header">
+        <div class="nav">
+            <li class="logo">OCTOBER PROJECT</li>
+            <li>Contact</li>    
+            <li>Blog</li>
+            <li>About</li>
+            <li>Home</li>
+        </div>
+    </div>
+</body>
+</html>
